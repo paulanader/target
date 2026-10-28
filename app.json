@@ -1,7 +1,23 @@
 {
   "expo": {
     "name": "target",
+    "scheme": "target",
+    "experiments": {
+      "typedRoutes": true
+    },
     "slug": "target",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      "package": "com.paulanader.target",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3D44CD"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.paulanader.target",
+      "icon": "./assets/ios-icon.png"
+    },
+    "plugins": ["expo-router", "expo-sqlite"]
   }
 }
